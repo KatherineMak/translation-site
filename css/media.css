@@ -1,4 +1,4 @@
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     .menu {
         display: block;
     }
@@ -41,7 +41,7 @@
         top: 100%;
         right: 0;
         width: 200px;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.9);
     }
 
     .navigation {
@@ -168,7 +168,11 @@
     /* form */
 
     .form {
-        height: 1800px;
+        height: 1750px;
+    }
+
+    .form__box {
+        margin: 0 25px;
     }
 
     .form__title {
@@ -192,4 +196,63 @@
         margin: 30px 10px;
         text-align: center;
     }
+}
+
+@media (max-width: 350px) {
+
+    /* header */
+
+    .banner {
+        background-size: cover;
+    }
+
+    .banner-wrap {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .banner-wrap h1 {
+        font-size: 27px;
+        font-weight: normal;
+        line-height: 35px;
+    }
+
+    h1 .yellow {
+        font-size: 34px;
+    }
+
+    .banner-rectangle h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .banner-rectangle {
+        padding: 20px;
+    }
+
+    .btn__custom {
+        font-size: 12px;
+    }
+
+    /* services */
+
+    .services {
+        height: 1150px;
+    }
+
+    /* about */
+
+     .heading__about {
+         font-size: 30px;
+     }
+
+     .content__about {
+         margin-top: 20px;
+     }
+
+     /* form */
+    .form {
+        height: 2300px;
+    }
+
 }
