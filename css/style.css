@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'A Futurica Lt Semi Bold', Arial, sans-serif;
+    font-family: 'A Futurica Lt Thin', Arial, sans-serif;
 }
 
 .wrapper {
@@ -105,6 +105,10 @@ textarea {
 }
 
 /* header */
+
+.menu-toggle {
+    display: none;
+}
 
 .header-wrap {
     display: flex;
@@ -284,6 +288,7 @@ header {
     line-height: 28px;
     letter-spacing: -0.3px;
     margin-top: 40px;
+    text-align: justify;
 }
 
 /* advantages */
@@ -415,11 +420,6 @@ header {
     min-height: 50px;
     min-width: 50px;
     background: url("../img/circle.png") no-repeat center top;
-    /*-webkit-box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.6);*/
-    /*-moz-box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.6);*/
-    /*box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.6);*/
-    /*border-radius: 50%;*/
-    /*background: #ffba00;*/
     text-align: center;
     font-size: 32px;
     line-height: 50px;
@@ -508,7 +508,7 @@ header {
 }
 
 .address {
-    text-align: center;
+    text-align: left;
     color: #ffffff;
     font-family: "A Futurica Lt Thin";
     font-size: 13px;
@@ -523,7 +523,7 @@ header {
     font-size: 18px;
     line-height: 39px;
     letter-spacing: -0.26px;
-    margin-bottom: 15px;
+    margin: 0 0 15px 20px;
 }
 
 .address a:hover {
@@ -535,11 +535,11 @@ header {
     margin-right: 27px;
 }
 .address p {
-    margin-top: 27px;
+    margin: 27px 0 0 25px;
 }
 
 .email__icon {
-    padding-left: 30px;
+    /*padding-left: 30px;*/
 }
 
 .contact__email {
@@ -575,4 +575,3 @@ footer .logo a {
     text-transform: uppercase;
     letter-spacing: 0.26px;
 }
-

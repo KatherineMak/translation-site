@@ -7,7 +7,13 @@
     <title>АГЕНСТВО ПРОФЕССИОНАЛЬНЫХ ПЕРЕВОДОВ | Research Aid Kz</title>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" media="screen,projection" href="css/ui.totop.css" />
+
+    <script type="text/javascript" src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="lib/scrollto/jquery.scrollTo-min.js"></script>
+
 </head>
 <body>
 
@@ -19,24 +25,29 @@
                         <a href="#">Research Aid Kz</a>
                     </div>
                     <nav class="navigation">
-                        <div class="header__btn-menu">
-                            <span class="icon-bars"></span>
-                        </div>
+                        <button class="menu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <!--<div class="header__btn-menu">-->
+                            <!--<span class="icon-bars"></span>-->
+                        <!--</div>-->
                         <ul class="menu">
                             <li class="menu__item">
-                                <a href="#services" class="menu__link">Наши услуги</a>
+                                <a href="#services" class="menu__link" id="services_scroll">Наши услуги</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#about" class="menu__link">О компании</a>
+                                <a href="#about" class="menu__link" id="about_scroll">О компании</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#advantages" class="menu__link">Почему мы?</a>
+                                <a href="#advantages" class="menu__link" id="advantages_scroll">Почему мы?</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#languages" class="menu__link">Список языков</a>
+                                <a href="#languages" class="menu__link" id="languages_scroll">Список языков</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#contacts" class="menu__link">Контакты</a>
+                                <a href="#contacts" class="menu__link" id="contacts_scroll">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -54,13 +65,13 @@
                             С Вами мы будем впереди
                         </h3>
                     </div>
-                    <a class="btn__custom" href="#">Подать заявку</a>
+                    <a href="#form" class="btn__custom" id="apply">Подать заявку</a>
                 </div>
             </div>
         </header>
     </div>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="content__services">
                 <div class="heading">
@@ -94,8 +105,8 @@
         </div>
     </section>
 
-    <section class="about">
-        <div class="container">
+    <section class="about" id="about">
+        <div class="wrapper">
             <div class="heading__about">
                 О компании
             </div>
@@ -109,7 +120,7 @@
         </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <div class="content__advantages">
                 <div class="heading">
@@ -139,13 +150,13 @@
         </div>
     </section>
 
-    <section class="languages">
-        <div class="container">
+    <section class="languages" id="languages">
+        <div class="wrapper">
             <div class="heading">
                 Список языков
             </div>
-            <div class="languages__items">
-                <div class="languages__item">
+            <div class="row languages__items">
+                <div class="col-lg-6 col-sm-12 languages__item">
                     <div class="languages__item__title">
                         Список языков
                     </div>
@@ -156,7 +167,7 @@
                         Французский, Итальянский, Испанский
                     </div>
                 </div>
-                <div class="languages__item">
+                <div class="col-lg-6 col-sm-12 languages__item">
                     <div class="languages__item__title">
                         Устный перевод
                     </div>
@@ -171,8 +182,8 @@
         </div>
     </section>
 
-    <section class="form">
-        <div class="container">
+    <section class="form" id="form">
+        <div class="wrapper">
             <div class="heading">
                 Подать заявку
             </div>
@@ -227,13 +238,13 @@
                     </form>
                 </div>
             </div>
-            <div class="row contacts">
-                <div class="phone col-md-4">
+            <div class="row contacts" id="contacts">
+                <div class="contact__item phone col-lg-4 col-md-6">
                     <div class="tel"><a href="tel:+37544727-70-70"><img src="img/tel-icon.png"/>+37544 727-70-70</a></div>
                     <div class="tel"><a href="tel:+37525727-70-70"><img src="img/tel-icon.png">+37525 727-70-70</a></div>
                     <div class="tel"><a href="tel:+37517 399-66-96"><img src="img/tel-1-icon.png">+37517 399-66-96</a></div>
                 </div>
-                <div class="social col-md-4">
+                <div class="contact__item social col-lg-4 col-md-6">
                     <p>также присоединяйтесь к нам в соц. сетях</p>
                     <div>
                         <a href="#"><img src="img/vk-icon.png"></a>
@@ -241,7 +252,7 @@
                         <a href="#"><img src="img/fb-icon.png"></a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="contact__item col-lg-4">
                     <div class="address">
                         <a href="mailto:equality.translation@gmail.com" class="contact__email"><img class="email__icon" src="img/email-icon.png" alt="email">equality.translation@gmail.com<br></a>
                         <p><img class="address__icon" src="img/address-icon.png" alt="address-icon">г. Нур-Султан, ул. Петрова, 18</p>
@@ -254,19 +265,22 @@
     <footer>
         <div class="container">
             <div class="row justify-content-lg-start">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="logo">
                         <a href="#">Research Aid Kz</a>
                     </div>
                 </div>
-                <div class="copyright col-md-4 col-sm-6">
+                <div class="copyright col-lg-4 col-md-6">
                     Copyright © 2019
                 </div>
             </div>
         </div>
     </footer>
 
-<!--<script type="text/javascript" src="js/lala.js"></script>-->
+    <!--<script type="text/javascript" src="js/lala.js"></script>-->
+    <script src="js/jquery.ui.totop.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
 
 </body>
 </html>
