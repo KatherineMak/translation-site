@@ -334,8 +334,9 @@ header {
 
 .languages {
     background: url(../img/languages-bg.png) no-repeat center;
+    background-size: cover;
     min-height: 450px;
-    padding-top: 65px;
+    padding: 65px 0 85px 0;
 }
 
 .languages .heading {
@@ -369,7 +370,7 @@ header {
 /* form */
 
 .form {
-    min-height: 860px;
+    min-height: 950px;
     background-color: #1d1d1d;
     padding-top: 60px;
 }

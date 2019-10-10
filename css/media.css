@@ -71,7 +71,7 @@
     /* form */
 
     .form {
-        /*height: 1100px;*/
+        height: 1100px;
         background-color: #1d1d1d;
     }
 
@@ -232,6 +232,7 @@
 
     .btn__custom {
         font-size: 12px;
+        line-height: 20px;
     }
 
     /* services */
@@ -241,6 +242,10 @@
     }
 
     /* about */
+
+    .about {
+        padding-bottom: 10px;
+    }
 
      .heading__about {
          font-size: 30px;
@@ -252,7 +257,17 @@
 
      /* form */
     .form {
-        height: 2300px;
+        height: 2200px;
+    }
+
+    .phone a{
+        font-size: 18px;
+    }
+
+    .address img {
+        display: block;
+        margin: 0 0 20px 70px;
+        padding: 0;
     }
 
 }
