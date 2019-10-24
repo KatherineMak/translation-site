@@ -80,7 +80,7 @@ input {
     display: block;
     font-style: italic;
     font-family: "A Futurica Lt Thin";
-    margin: 0;
+    margin: 5px 0px;
     min-height: 64px;
     width: 100%;
     border-radius: 8px;
@@ -95,7 +95,7 @@ textarea {
     font-style: italic;
     font-family: "A Futurica Lt Thin";
     height: 131px;
-    margin: 0 auto;
+    margin: 5px 0px;
     border-radius: 8px;
     width: 100%;
     outline: 0;
