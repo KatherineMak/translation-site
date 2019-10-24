@@ -129,8 +129,9 @@ header {
 }
 
 .banner {
-    height: 836px;
+    min-height: 836px;
     background: url("../img/banner.png") no-repeat center top;
+    background-size: cover;
 }
 
 .logo a {
@@ -180,7 +181,7 @@ header {
 
 .banner-wrap {
     text-align: center;
-    padding-top: 100px;
+    padding: 215px 5px 25px 5px;
     max-width: 565px;
     margin: 0 auto;
 }
@@ -373,6 +374,7 @@ header {
     min-height: 950px;
     background-color: #1d1d1d;
     padding-top: 60px;
+    padding-bottom: 25px;
 }
 
 .form .heading {

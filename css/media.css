@@ -71,7 +71,7 @@
     /* form */
 
     .form {
-        height: 1100px;
+        min-height: 1100px;
         background-color: #1d1d1d;
     }
 
@@ -99,7 +99,6 @@
     }
 
     .btn__custom {
-        width: 80%;
         max-height: 55px;
         font-size: 20px;
     }
@@ -168,7 +167,7 @@
     /* form */
 
     .form {
-        height: 1750px;
+        min-height: 1750px;
     }
 
     .form__box {
@@ -257,7 +256,7 @@
 
      /* form */
     .form {
-        height: 2200px;
+        min-height: 2200px;
     }
 
     .phone a{
